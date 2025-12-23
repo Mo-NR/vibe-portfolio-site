@@ -1,11 +1,11 @@
-# Pete McPherson Portfolio
+# Mohammed Rahman Portfolio
 
 A minimal, bold portfolio website built with Astro, Tailwind CSS, and deployed on Cloudflare Pages.
 
 ## Features
 
 - **Fast & Lightweight**: Built with Astro for optimal performance (zero JS by default)
-- **Minimal Design**: Clean, bold aesthetic with white, black, and red color scheme
+- **Minimal Design**: Clean, bold aesthetic with dark navy, dark green, and black color scheme
 - **Responsive**: Mobile-first design that works on all devices
 - **SEO Optimized**: Includes sitemap, robots.txt, and proper meta tags
 - **Newsletter Integration**: Frontend newsletter signup form (ready for backend integration)
@@ -27,7 +27,7 @@ A minimal, bold portfolio website built with Astro, Tailwind CSS, and deployed o
 1. Clone the repository:
 ```bash
 git clone <your-repo-url>
-cd pete-mcpherson-portfolio
+cd mohammed-rahman-portfolio
 ```
 
 2. Install dependencies:
@@ -165,5 +165,5 @@ This site is optimized for performance:
 
 ## License
 
-All rights reserved. © Pete McPherson
+All rights reserved. © Mohammed Rahman
 
