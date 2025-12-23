@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+
+// PLACEHOLDER: Replace with actual project data
+const projects = [
+  {
+    title: "Project One",
+    description: "This is placeholder content for Project One. Replace this with a description of the project, what it does, and why it matters. Include key features, technologies used, or outcomes achieved.",
+    link: "#"
+  },
+  {
+    title: "Project Two",
+    description: "This is placeholder content for Project Two. Replace this with a description of the project, what it does, and why it matters. Include key features, technologies used, or outcomes achieved.",
+    link: "#"
+  },
+  {
+    title: "Project Three",
+    description: "This is placeholder content for Project Three. Replace this with a description of the project, what it does, and why it matters. Include key features, technologies used, or outcomes achieved.",
+    link: "#"
+  },
+  {
+    title: "Project Four",
+    description: "This is placeholder content for Project Four. Replace this with a description of the project, what it does, and why it matters. Include key features, technologies used, or outcomes achieved.",
+    link: "#"
+  },
+  {
+    title: "Project Five",
+    description: "This is placeholder content for Project Five. Replace this with a description of the project, what it does, and why it matters. Include key features, technologies used, or outcomes achieved.",
+    link: "#"
+  },
+  {
+    title: "Project Six",
+    description: "This is placeholder content for Project Six. Replace this with a description of the project, what it does, and why it matters. Include key features, technologies used, or outcomes achieved.",
+    link: "#"
+  }
+];
+---
+
+<BaseLayout 
+  title="Projects | Pete McPherson"
+  description="Explore Pete McPherson's portfolio of projects and work."
+  currentPage="projects"
+>
+  <div class="max-w-[960px] mx-auto px-6 py-24">
+    <h1 class="text-6xl md:text-7xl font-heading font-bold uppercase mb-6">
+      Projects
+    </h1>
+    <p class="text-xl font-body text-black/80 mb-16 max-w-2xl">
+      <!-- PLACEHOLDER: Replace with projects page introduction -->
+      A collection of projects I've worked on. Each one represents a unique challenge, 
+      solution, or creative endeavor.
+    </p>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+      {projects.map((project) => (
+        <ProjectCard 
+          title={project.title}
+          description={project.description}
+          link={project.link}
+        />
+      ))}
+    </div>
+
+    <!-- Newsletter Signup Section -->
+    <section class="border-t-2 border-black pt-16">
+      <h2 class="text-3xl font-heading font-bold uppercase mb-6 text-center">
+        Stay Updated
+      </h2>
+      <p class="font-body text-lg text-black/80 text-center mb-8 max-w-2xl mx-auto">
+        <!-- PLACEHOLDER: Newsletter description -->
+        Get notified when I launch new projects or share updates about my work.
+      </p>
+      <NewsletterForm variant="secondary" />
+    </section>
+  </div>
+</BaseLayout>
+

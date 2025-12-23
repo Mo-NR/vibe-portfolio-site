@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  link?: string;
+}
+
+const { title, description, link = '#' } = Astro.props;
+---
+
+<article class="border-2 border-black p-8 hover:border-violent-red transition-colors">
+  <h3 class="text-2xl font-heading font-bold uppercase mb-4">
+    {title}
+  </h3>
+  <p class="font-body text-black/80 mb-6">
+    {description}
+  </p>
+  {link !== '#' && (
+    <a 
+      href={link}
+      class="inline-block font-body text-sm uppercase tracking-wide text-violent-red hover:text-black transition-colors"
+    >
+      View Project →
+    </a>
+  )}
+</article>
+

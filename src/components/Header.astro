@@ -1,0 +1,48 @@
+---
+interface Props {
+  currentPage?: string;
+}
+
+const { currentPage = '' } = Astro.props;
+---
+
+<header class="border-b border-black">
+  <nav class="max-w-[960px] mx-auto px-6 py-6 flex justify-between items-center">
+    <a href="/" class="text-2xl font-heading font-bold uppercase tracking-tight">
+      Pete McPherson
+    </a>
+    <ul class="flex gap-8">
+      <li>
+        <a 
+          href="/" 
+          class={`font-body text-sm uppercase tracking-wide transition-colors ${
+            currentPage === 'home' ? 'text-violent-red' : 'text-black hover:text-violent-red'
+          }`}
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a 
+          href="/about" 
+          class={`font-body text-sm uppercase tracking-wide transition-colors ${
+            currentPage === 'about' ? 'text-violent-red' : 'text-black hover:text-violent-red'
+          }`}
+        >
+          About
+        </a>
+      </li>
+      <li>
+        <a 
+          href="/projects" 
+          class={`font-body text-sm uppercase tracking-wide transition-colors ${
+            currentPage === 'projects' ? 'text-violent-red' : 'text-black hover:text-violent-red'
+          }`}
+        >
+          Projects
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+

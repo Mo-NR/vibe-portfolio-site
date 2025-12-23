@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+---
+
+<BaseLayout 
+  title="About | Pete McPherson"
+  description="Learn about Pete McPherson's background, story, and journey."
+  currentPage="about"
+>
+  <div class="max-w-[960px] mx-auto px-6 py-24">
+    <h1 class="text-6xl md:text-7xl font-heading font-bold uppercase mb-12">
+      About
+    </h1>
+
+    <div class="prose prose-lg max-w-none mb-16">
+      <section class="mb-12">
+        <h2 class="text-3xl font-heading font-bold uppercase mb-6">
+          My Story
+        </h2>
+        <p class="font-body text-lg text-black/80 leading-relaxed mb-6">
+          <!-- PLACEHOLDER: Replace with Pete's actual story -->
+          This is placeholder content for Pete's story. Replace this section with information 
+          about his background, where he comes from, and what led him to where he is today. 
+          This should be personal, engaging, and help visitors connect with Pete on a human level.
+        </p>
+        <p class="font-body text-lg text-black/80 leading-relaxed mb-6">
+          <!-- PLACEHOLDER: Additional story content -->
+          Add more paragraphs here to tell a complete story. Include details about his education, 
+          career journey, key milestones, and what drives him.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-heading font-bold uppercase mb-6">
+          Background
+        </h2>
+        <p class="font-body text-lg text-black/80 leading-relaxed mb-6">
+          <!-- PLACEHOLDER: Replace with background information -->
+          This section should include Pete's professional background, skills, expertise areas, 
+          and any notable accomplishments or achievements. This helps establish credibility and 
+          gives visitors a clear picture of what Pete brings to the table.
+        </p>
+        <p class="font-body text-lg text-black/80 leading-relaxed">
+          <!-- PLACEHOLDER: Additional background content -->
+          Add more details about specific experiences, projects, or roles that have shaped 
+          Pete's journey.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-heading font-bold uppercase mb-6">
+          Current Focus
+        </h2>
+        <p class="font-body text-lg text-black/80 leading-relaxed mb-6">
+          <!-- PLACEHOLDER: Replace with current projects/focus -->
+          Share what Pete is currently working on, what he's passionate about right now, 
+          and what visitors can expect to learn from following along. This creates a sense 
+          of relevance and timeliness.
+        </p>
+        <p class="font-body text-lg text-black/80 leading-relaxed">
+          <!-- PLACEHOLDER: Additional current focus content -->
+          Add more information about ongoing projects, goals, or initiatives.
+        </p>
+      </section>
+    </div>
+
+    <!-- Newsletter Signup Section -->
+    <section class="border-t-2 border-black pt-16">
+      <h2 class="text-3xl font-heading font-bold uppercase mb-6 text-center">
+        Stay Connected
+      </h2>
+      <p class="font-body text-lg text-black/80 text-center mb-8 max-w-2xl mx-auto">
+        <!-- PLACEHOLDER: Newsletter description -->
+        Join my weekly newsletter to receive updates, insights, and exclusive content.
+      </p>
+      <NewsletterForm variant="secondary" />
+    </section>
+  </div>
+</BaseLayout>
+
